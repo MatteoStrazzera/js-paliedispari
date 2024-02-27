@@ -26,13 +26,17 @@ e infine le lettere vengono riunite -> .join('')
 
 // Creare una funzione per capire se la parola inserita è palindroma
 
+/**
+ * 
+ * @param {string} userWord 
+ */
 function isPalindrome(userWord) {
     // console.log('works');
     const reverseWord = userWord.split('').reverse().join('');
-    
+
     // creiamo le condizioni per verificare se userWord è palindromo
     if (userWord === reverseWord) {
-        
+
         console.log(`La parola ${userWord} è palindroma`);
 
     } else {
