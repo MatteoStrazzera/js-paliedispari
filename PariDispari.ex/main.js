@@ -21,3 +21,18 @@ console.log(userPick);
 const userNumber = Number(prompt('Scegli un numero da 1 a 5'));
 
 console.log(userNumber);
+
+// Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
+
+/**
+ * 
+ * @returns {number}
+ * 
+ */
+function randomNumber() {
+    return Math.floor(Math.random() * 5) + 1;
+}
+
+const pcRandomNumber = randomNumber();
+
+console.log(pcRandomNumber);
