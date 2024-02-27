@@ -27,7 +27,7 @@ e infine le lettere vengono riunite -> .join('')
 // Creare una funzione per capire se la parola inserita è palindroma
 
 /**
- * 
+ * funzione per scoprire se una parola è palindroma
  * @param {string} userWord 
  */
 function isPalindrome(userWord) {

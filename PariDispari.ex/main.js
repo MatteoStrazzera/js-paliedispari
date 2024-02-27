@@ -25,7 +25,7 @@ console.log(userNumber);
 // Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
 
 /**
- * 
+ * funzione per generare un numero randomico da 1 a 5
  * @returns {number}
  * 
  */
@@ -36,3 +36,47 @@ function randomNumber() {
 const pcRandomNumber = randomNumber();
 
 console.log(pcRandomNumber);
+
+// Sommiamo i due numeri
+
+/**
+ * funzione per sommare due numeri 
+ * @param {number} numb1 
+ * @param {number} numb2 
+ * @returns {number}
+ */
+function sum(numb1, numb2) {
+
+    return numb1 + numb2;
+}
+
+const sumOfNumb = sum(userNumber, pcRandomNumber);
+
+console.log(sumOfNumb);
+
+// Stabiliamo se la somma dei due numeri è pari o dispari
+
+/**
+ * 
+ * @param {number} number 
+ * @returns {string}
+ */
+function evenOrOddGame(number) {
+
+    outcome = "";
+
+    if (sumOfNumb % 2 === 0) {
+
+        outcome = `Even`;
+
+    } else {
+
+        outcome = `Odd`;
+    }
+
+    return outcome;
+}
+
+const evenOrOddResult = evenOrOddGame(sumOfNumb);
+
+console.log(evenOrOddResult);
