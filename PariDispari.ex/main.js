@@ -67,11 +67,11 @@ function evenOrOddGame(number) {
 
     if (sumOfNumb % 2 === 0) {
 
-        outcome = `Even`;
+        outcome = `pari`;
 
     } else {
 
-        outcome = `Odd`;
+        outcome = `dispari`;
     }
 
     return outcome;
@@ -80,3 +80,18 @@ function evenOrOddGame(number) {
 const evenOrOddResult = evenOrOddGame(sumOfNumb);
 
 console.log(evenOrOddResult);
+
+// Dichiariamo chi ha vinto.
+
+if (userPick === evenOrOddResult && sumOfNumb % 2 === 0) {
+    
+    console.log(`User pick ${userPick} and the sum of number is ${sumOfNumb} so the winner is USER!!!`);
+
+} else if (userPick === evenOrOddResult && sumOfNumb % 2 === 1) {
+    
+    console.log(`User pick ${userPick} and the sum of number is ${sumOfNumb} so the winner is USER!!!`);
+
+} else {
+
+    console.log(`User pick ${userPick} and the sum of number is ${sumOfNumb} so the winner is PC!!!`);
+}
